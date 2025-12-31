@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-    @GetMapping("/hello")
+    @GetMapping("/hello/{name}")
     public String getGreeting(@PathVariable String name){
         return "hello "+name+" happy new year 2026";
     }
