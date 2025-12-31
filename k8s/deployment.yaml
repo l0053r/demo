@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: app:9
-          imagePullPolicy: Never
+          image: localhost:32000/app:1
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
